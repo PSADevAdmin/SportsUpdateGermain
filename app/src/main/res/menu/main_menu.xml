@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/nav_create_match"
+            android:title="Create Match"
+            />
+        <item
+            android:id="@+id/nav_create_tournament"
+            android:title="Create Tournament"
+            />
+        <item
+            android:id="@+id/nav_onGoing_match"
+            android:title="Ongoing Match"
+            />
+        <item
+            android:id="@+id/nav_ongoing_tournament"
+            android:title="Ongoing Tournaments"
+            />
+        <item
+            android:id="@+id/nav_clubs"
+            android:title="Clubs"
+            />
+        <item
+            android:id="@+id/nav_association"
+            android:title="Associations"
+            />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings"
+            />
+    </group>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        />
+
+</menu>

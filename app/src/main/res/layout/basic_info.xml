@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/user_photo_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profile_user_photo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:src="@mipmap/ic_launcher"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose image"
+                    android:layout_below="@id/profile_user_photo"
+                    android:id="@+id/choose_profile_photo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/choose_profile_photo"
+                    android:id="@+id/upload_profile_photo"
+                    android:text="Upload Image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_photo_relative_layout"
+                android:layout_marginTop="50dp"
+                android:background="@color/design_default_color_primary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:id="@+id/profile_row1">
+
+                    <TextView
+                        android:id="@+id/profile_matches"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#fff"
+                        android:text="Matches"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/profile_goals"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#fff"
+                        android:text="Goals"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/profile_assists"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#fff"
+                        android:text="Assists"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_below="@id/profile_row1"
+                    android:id="@+id/profile_row2">
+
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:background="#fff"
+                        android:id="@+id/profile_position_spinner"
+                        android:gravity="center"
+                        />
+
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:background="#fff"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/profile_jersey_spinner"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/profile_MoM"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="#fff"
+                        android:text="Man of the Match"
+                        android:gravity="center"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/testing1"
+                    android:layout_below="@id/profile_row2"
+                    android:text="position"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/testing2"
+                    android:layout_below="@id/testing1"
+                    android:text="jersey"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
